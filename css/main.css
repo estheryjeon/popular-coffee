@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+html, body {
+	font-family: 'Space Mono';
+}
+
+#text {
+	font-size: 6px;
+}
+
+svg {
+	height: 100vh;
+}
+
+#popular {
+	fill: #F05656;
+}
+
+#water {
+	fill: #E8F0F9;
+}
+
+#border {
+	fill:none;
+	stroke:#000000;
+	stroke-width:0.5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-dasharray: 4.9917,4.9917;
+}
+
+#parks {
+	fill: #ECF5E3;
+}
+
+#streets {
+	fill:none;
+	stroke:#000000;
+	stroke-width:0.5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+}
+
+.st12 {
+	fill: #FFFFFF;
+}
+.st13{
+	font-size:7.3511px;
+}
