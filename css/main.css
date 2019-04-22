@@ -7,6 +7,22 @@ html, body {
 	font-family: 'Space Mono';
 }
 
+#info {
+	display: none;
+	position: fixed;
+	padding: 2.5%;
+	text-align: center;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+}
+
+@media only screen and (max-width: 720px) {
+    #info {
+        position: absolute;
+    }
+}
+
 #text {
 	font-size: 6px;
 }
