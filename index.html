@@ -16,8 +16,10 @@
 </head>
 
 <body>
-  <div id="info">
-
+  <div id="info-box">
+    <span id="close">&times;</span>
+    <div id="info">
+    </div>
   </div>
 
   <div>
@@ -146,10 +148,10 @@
     	<polygon points="969.5,475.1 992.6,477.8 991,487.2 968.3,481.3 	"/>
     	<polygon points="943.9,598.3 945,592.4 950.6,593.6 949.7,599.2 	"/>
     </g>
-    <g id="popular" class="zoomTarget">
+    <g id="popular" class="popular">
       <circle id="square-one" cx="795.4" cy="465" r="15.9"/>
       <circle id="rival-bros" cx="748.4" cy="466.1" r="15.9"/>
-      <circle id="elixr-cc" cx="757.4" cy="426.7" r="15.9"/>
+      <circle id="elixr" cx="757.4" cy="426.7" r="15.9"/>
       <circle id="res-ipsa" cx="653.7" cy="407.7" r="15.9"/>
     	<circle id="ultimo-cc" cx="689.3" cy="421.9" r="15.9"/>
       <circle id="bluestone" cx="733" cy="429.5" r="15.9"/>
@@ -687,179 +689,208 @@
     	<text transform="matrix(0.1644 -0.9864 0.9864 0.1644 925.6842 576.1825)">3rd St</text>
     	<text transform="matrix(0.169 -0.9856 0.9856 0.169 942.2974 582.064)">2nd St</text>
     </g>
-    <g id="coffee-shops">
-    	<g id="square-one-1">
-    		<circle id="sq1" cx="795.8" cy="464.7" r="5.5"/>
+    <g id="coffee-shops" class="popular">
+      <!--1-->
+    	<g id="square-one">
+    		<circle id="square-one" cx="795.8" cy="464.7" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 793.7516 467.0107)" class="st12 st13">1</text>
+    			<text id="square-one" transform="matrix(1 0 0 1 793.7516 467.0107)" class="st12 st13">1</text>
     		</g>
     	</g>
-    	<g id="rival-bros-2">
-    		<circle id="sq1_3_" cx="748" cy="465.7" r="5.5"/>
+      <!--2-->
+    	<g id="rival-bros">
+    		<circle id="rival-bros" cx="748" cy="465.7" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 745.8083 468.1719)" class="st12 st10 st13">2</text>
+    			<text id="rival-bros" transform="matrix(1 0 0 1 745.8083 468.1719)" class="st12 st10 st13">2</text>
     		</g>
     	</g>
-    	<g id="elixr-3">
-    		<circle id="sq1_2_" cx="757.7" cy="426.5" r="5.5"/>
+      <!--3-->
+    	<g id="elixr">
+    		<circle id="elixr" cx="757.7" cy="426.5" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 755.5482 428.9791)" class="st12 st10 st13">3</text>
+    			<text id="elixr" transform="matrix(1 0 0 1 755.5482 428.9791)" class="st12 st10 st13">3</text>
     		</g>
     	</g>
-    	<g id="res-ipsa-4">
-    		<circle id="sq1_4_" cx="654.2" cy="408" r="5.5"/>
+      <!--4-->
+    	<g id="res-ipsa">
+    		<circle id="res-ipsa" cx="654.2" cy="408" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 652.0124 410.4912)" class="st12 st10 st13">4</text>
+    			<text id="res-ipsa" transform="matrix(1 0 0 1 652.0124 410.4912)" class="st12 st10 st13">4</text>
     		</g>
     	</g>
-    	<g id="ultimo-cc-5">
-    		<circle id="sq1_5_" cx="689.5" cy="421.6" r="5.5"/>
+      <!--5-->
+    	<g id="ultimo-cc">
+    		<circle id="ultimo-cc" cx="689.5" cy="421.6" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 687.3674 424.0293)" class="st12 st10 st13">5</text>
+    			<text id="ultimo-cc" transform="matrix(1 0 0 1 687.3674 424.0293)" class="st12 st10 st13">5</text>
     		</g>
     	</g>
-    	<g id="bluestone-6">
-    		<circle id="sq1_6_" cx="733.3" cy="429.3" r="5.5"/>
+      <!--6-->
+    	<g id="bluestone">
+    		<circle id="bluestone" cx="733.3" cy="429.3" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 731.1364 431.7764)" class="st12 st10 st13">6</text>
+    			<text id="bluestone" transform="matrix(1 0 0 1 731.1364 431.7764)" class="st12 st10 st13">6</text>
     		</g>
     	</g>
-    	<g id="joe-cc-7">
-    		<circle id="sq1_7_" cx="717.3" cy="410.5" r="5.5"/>
+      <!--7-->
+    	<g id="joe-cc">
+    		<circle id="joe-cc" cx="717.3" cy="410.5" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 715.1464 412.9288)" class="st12 st10 st13">7</text>
+    			<text id="joe-cc" transform="matrix(1 0 0 1 715.1464 412.9288)" class="st12 st10 st13">7</text>
     		</g>
     	</g>
-    	<g id="peddler-8">
-    		<circle id="sq1_8_" cx="689.8" cy="321.4" r="5.5"/>
+      <!--8-->
+    	<g id="peddler">
+    		<circle id="peddler" cx="689.8" cy="321.4" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 687.6345 323.8838)" class="st12 st10 st13">8</text>
+    			<text id="peddler" transform="matrix(1 0 0 1 687.6345 323.8838)" class="st12 st10 st13">8</text>
     		</g>
     	</g>
-    	<g id="frieda-9">
-    		<circle id="sq1_9_" cx="936.5" cy="453" r="5.5"/>
+      <!--9-->
+    	<g id="frieda">
+    		<circle id="frieda" cx="936.5" cy="453" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 934.3298 455.418)" class="st12 st10 st13">9</text>
+    			<text id="frieda" transform="matrix(1 0 0 1 934.3298 455.418)" class="st12 st10 st13">9</text>
     		</g>
     	</g>
-    	<g id="old-city-10">
-    		<circle id="sq1_10_" cx="961" cy="406.9" r="5.5"/>
+      <!--10-->
+    	<g id="old-city">
+    		<circle id="old-city" cx="961" cy="406.9" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 956.8102 409.3467)" class="st12 st10 st13">10</text>
+    			<text id="old-city" transform="matrix(1 0 0 1 956.8102 409.3467)" class="st12 st10 st13">10</text>
     		</g>
     	</g>
-    	<g id="menagerie-11">
-    		<circle id="sq1_11_" cx="947.5" cy="420.2" r="5.5"/>
+      <!--11-->
+    	<g id="menagerie">
+    		<circle id="menagerie" cx="947.5" cy="420.2" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 943.4655 422.7041)" class="st12 st10 st13">11</text>
+    			<text id="menagerie" transform="matrix(1 0 0 1 943.4655 422.7041)" class="st12 st10 st13">11</text>
     		</g>
     	</g>
-      <g id="rally-12">
-    		<circle id="sq1_12_" cx="875.9" cy="523.3" r="5.5"/>
+      <!--12-->
+      <g id="rally">
+    		<circle id="rally" cx="875.9" cy="523.3" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 871.739 525.709)" class="st12 st10 st13">12</text>
+    			<text id="rally" transform="matrix(1 0 0 1 871.739 525.709)" class="st12 st10 st13">12</text>
     		</g>
     	</g>
-    	<g id="function-13">
-    		<circle id="sq1_13_" cx="825.9" cy="558.5" r="5.5"/>
+      <!--13-->
+    	<g id="function">
+    		<circle id="function" cx="825.9" cy="558.5" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 821.7311 560.9092)" class="st12 st10 st13">13</text>
+    			<text id="function" transform="matrix(1 0 0 1 821.7311 560.9092)" class="st12 st10 st13">13</text>
     		</g>
     	</g>
-    	<g id="chapterhouse-14">
-    		<circle id="sq1_14_" cx="845.3" cy="510.4" r="5.5"/>
+      <!--14-->
+    	<g id="chapterhouse">
+    		<circle id="chapterhouse" cx="845.3" cy="510.4" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 841.2204 512.8213)" class="st12 st10 st13">14</text>
+    			<text id="chapterhouse" transform="matrix(1 0 0 1 841.2204 512.8213)" class="st12 st10 st13">14</text>
     		</g>
     	</g>
-    	<g id="ox-15">
-    		<circle id="sq1_15_" cx="929.6" cy="524.1" r="5.5"/>
+      <!--15-->
+    	<g id="ox">
+    		<circle id="ox" cx="929.6" cy="524.1" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 925.4479 526.5371)" class="st12 st10 st13">15</text>
+    			<text id="ox" transform="matrix(1 0 0 1 925.4479 526.5371)" class="st12 st10 st13">15</text>
     		</g>
     	</g>
-    	<g id="ultimo-brew-16">
-    		<circle id="sq1_16_" cx="720.1" cy="688.5" r="5.5"/>
+      <!--16-->
+    	<g id="ultimo-brew">
+    		<circle id="ultimo-brew" cx="720.1" cy="688.5" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 716.0222 690.9619)" class="st12 st10 st13">16</text>
+    			<text id="ultimo-brew" transform="matrix(1 0 0 1 716.0222 690.9619)" class="st12 st10 st13">16</text>
     		</g>
     	</g>
-    	<g id="ultimo-south-17">
-    		<circle id="sq1_17_" cx="647.6" cy="507.4" r="5.5"/>
+      <!--17-->
+    	<g id="ultimo-south">
+    		<circle id="ultimo-south" cx="647.6" cy="507.4" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 643.466 509.8086)" class="st12 st10 st13">17</text>
+    			<text id="ultimo-south" transform="matrix(1 0 0 1 643.466 509.8086)" class="st12 st10 st13">17</text>
     		</g>
     	</g>
-      <g id="reanimator-18">
-    		<circle id="sq1_18_" cx="302.2" cy="382.7" r="5.5"/>
+      <!--18-->
+      <g id="reanimator">
+    		<circle id="reanimator" cx="302.2" cy="382.7" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 298.0427 385.1367)" class="st12 st10 st13">18</text>
+    			<text id="reanimator" transform="matrix(1 0 0 1 298.0427 385.1367)" class="st12 st10 st13">18</text>
     		</g>
     	</g>
-      <g id="joe-uc-19">
-    		<circle id="sq1_19_" cx="563.7" cy="369.8" r="5.5"/>
+      <!--19-->
+      <g id="joe-uc">
+    		<circle id="joe-uc" cx="563.7" cy="369.8" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 559.5563 372.3062)" class="st12 st10 st13">19</text>
+    			<text id="joe-uc" transform="matrix(1 0 0 1 559.5563 372.3062)" class="st12 st10 st13">19</text>
     		</g>
     	</g>
-      <g id="gryphon-20">
-    		<circle id="sq1_20_" cx="1044.6" cy="130.6" r="5.5"/>
+      <!--20-->
+      <g id="gryphon">
+    		<circle id="gryphon" cx="1044.6" cy="130.6" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 1040.5183 133.0645)" class="st12 st10 st13">20</text>
+    			<text id="gryphon" transform="matrix(1 0 0 1 1040.5183 133.0645)" class="st12 st10 st13">20</text>
     		</g>
     	</g>
-      <g id="la-colombe-21">
-    		<circle id="sq1_21_" cx="1060.2" cy="164.8" r="5.5"/>
+      <!--21-->
+      <g id="la-colombe">
+    		<circle id="la-colombe" cx="1060.2" cy="164.8" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 1056.1199 167.2949)" class="st12 st10 st13">21</text>
+    			<text id="la-colombe" transform="matrix(1 0 0 1 1056.1199 167.2949)" class="st12 st10 st13">21</text>
     		</g>
     	</g>
-      <g id="one-shot-22">
-    		<circle id="sq1_22_" cx="995.5" cy="207.7" r="5.5"/>
+      <!--22-->
+      <g id="one-shot">
+    		<circle id="one-shot" cx="995.5" cy="207.7" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 991.403 210.1484)" class="st12 st10 st13">22</text>
+    			<text id="one-shot" transform="matrix(1 0 0 1 991.403 210.1484)" class="st12 st10 st13">22</text>
     		</g>
     	</g>
-      <g id="reanimator-mas-23">
-    		<circle id="sq1_23_" cx="993.4" cy="151.9" r="5.5"/>
+      <!--23-->
+      <g id="reanimator-mas">
+    		<circle id="reanimator-mas" cx="993.4" cy="151.9" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 989.2663 154.3779)" class="st12 st10 st13">23</text>
+    			<text id="reanimator-mas" transform="matrix(1 0 0 1 989.2663 154.3779)" class="st12 st10 st13">23</text>
     		</g>
     	</g>
-    	<g id="reanimator-sus-24">
-    		<circle id="sq1_24_" cx="1121.4" cy="103.5" r="5.5"/>
+      <!--24-->
+    	<g id="reanimator-sus">
+    		<circle id="reanimator-sus" cx="1121.4" cy="103.5" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 1117.3132 106.0029)" class="st12 st10 st13">24</text>
+    			<text id="reanimator-sus" transform="matrix(1 0 0 1 1117.3132 106.0029)" class="st12 st10 st13">24</text>
     		</g>
     	</g>
-    	<g id="bodhi-25">
-    		<circle id="sq1_25_" cx="953.08" cy="502.6" r="5.5"/>
+      <!--25-->
+    	<g id="bodhi">
+    		<circle id="bodhi" cx="953.08" cy="502.6" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 948.9584 505.0672)" class="st12 st10 st13">25</text>
+    			<text id="bodhi" transform="matrix(1 0 0 1 948.9584 505.0672)" class="st12 st10 st13">25</text>
     		</g>
     	</g>
-    	<g id="win-win-26">
-    		<circle id="sq1_26_" cx="874.7" cy="269" r="5.5"/>
+      <!--26-->
+    	<g id="win-win">
+    		<circle id="win-win" cx="874.7" cy="269" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 870.5681 271.4136)" class="st12 st10 st13">26</text>
+    			<text id="win-win" transform="matrix(1 0 0 1 870.5681 271.4136)" class="st12 st10 st13">26</text>
     		</g>
     	</g>
-    	<g id="random-tea-27">
-    		<circle id="sq1_27_" cx="962.4" cy="261" r="5.5"/>
+      <!--27-->
+    	<g id="random-tea">
+    		<circle id="random-tea" cx="962.4" cy="261" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 958.2917 263.4199)" class="st12 st10 st13">27</text>
+    			<text id="random-tea" transform="matrix(1 0 0 1 958.2917 263.4199)" class="st12 st10 st13">27</text>
     		</g>
     	</g>
-    	<g id="ubb-28">
-    		<circle id="sq1_28_" cx="517.1" cy="374.3" r="5.5"/>
+      <!--28-->
+    	<g id="ubb">
+    		<circle id="ubb" cx="517.1" cy="374.3" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 512.9973 376.7754)" class="st12 st10 st13">28</text>
+    			<text id="ubb" transform="matrix(1 0 0 1 512.9973 376.7754)" class="st12 st10 st13">28</text>
     		</g>
     	</g>
-    	<g id="hermans-29">
-    		<circle id="sq1_29_" cx="912.4" cy="636.2" r="5.5"/>
+      <!--29-->
+    	<g id="hermans">
+    		<circle id="hermans" cx="912.4" cy="636.2" r="5.5"/>
     		<g>
-    			<text transform="matrix(1 0 0 1 908.2604 638.6963)" class="st12 st10 st13">29</text>
+    			<text id="hermans" transform="matrix(1 0 0 1 908.2604 638.6963)" class="st12 st10 st13">29</text>
     		</g>
     	</g>
     </g>

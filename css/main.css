@@ -7,10 +7,11 @@ html, body {
 	font-family: 'Space Mono';
 }
 
-#info {
+#info-box {
 	display: none;
 	position: fixed;
-	padding: 2.5%;
+	padding-bottom: 2.5%;
+	padding-top: 1.5%;
 	text-align: center;
 	width: 100%;
 	background-color: white;
@@ -18,7 +19,7 @@ html, body {
 }
 
 @media only screen and (max-width: 720px) {
-    #info {
+    #info-box {
         position: absolute;
     }
 }
@@ -33,6 +34,7 @@ svg {
 
 #popular {
 	fill: #F05656;
+	opacity: 0;
 }
 
 #water {
