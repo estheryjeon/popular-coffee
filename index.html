@@ -4,7 +4,9 @@
   <title>Philadelphia Coffee Shops</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, width=device-width,
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+    user-scalable=no" >
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,11 +19,13 @@
 </head>
 
 <body>
-  <div id="info-box">
-    <span id="close">&times;</span>
-    <div id="info">
+  <nav class="navbar-fixed-top">
+    <div id="info-box">
+      <span id="close">&times;</span>
+      <div id="info">
+      </div>
     </div>
-  </div>
+  </nav>
 
   <div>
     <?xml version="1.0" encoding="utf-8"?>
@@ -690,7 +694,7 @@
     <g id="coffee-shops" class="popular">
       <!--1-->
     	<g id="square-one">
-    		<circle id="square-one" cx="795.8" cy="464.7" r="5.5"/>
+    		<circle id="square-one square-one-circle" cx="795.8" cy="464.7" r="5.5"/>
     		<g>
     			<text id="square-one" transform="matrix(1 0 0 1 793.7516 467.0107)" class="st12 st13">1</text>
     		</g>

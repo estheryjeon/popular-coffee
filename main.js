@@ -18,6 +18,10 @@ $(document).ready(function() {
     }
   });
 
+  $(window).scroll(function() {
+    $('#info-box').css('top', $(this).scrollTop() + "px");
+  });
+
   var today = new Date();
   var day = today.getDay();
   var hour = today.getHours();
