@@ -34,10 +34,11 @@ svg {
 	height: 150vh;
 }
 
-#popular {
+#popular > circle {
 	fill: #F05656;
 	opacity: 0;
 }
+
 
 #water {
 	fill: #E8F0F9;

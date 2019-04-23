@@ -3,6 +3,15 @@ $(document).ready(function() {
   var box = document.getElementById("info-box");
   var close = document.getElementById("close");
 
+  var today = new Date();
+  var day = today.getDay();
+  var hour = today.getHours();
+
+  for (i=0; i<local_data.length; i++) {
+    var newOpacity = '0.' + local_data[i].populartimes[day].data[hour];
+    $("#" + local_data[i].tag).css('opacity', newOpacity);
+  }
+
   $('.popular').click(function(e) {
     var id = $(e.target).prop('id');
     for (i=0; i<local_data.length; i++) {
@@ -21,14 +30,5 @@ $(document).ready(function() {
   $(window).scroll(function() {
     $('#info-box').css('top', $(this).scrollTop() + "px");
   });
-
-  var today = new Date();
-  var day = today.getDay();
-  var hour = today.getHours();
-
-  for (i=0; i<local_data.length; i++) {
-    var newOpacity = '0.' + local_data[i].populartimes[day].data[hour];
-    $("#" + local_data[i].tag).css('opacity', newOpacity);
-  }
 
 });
