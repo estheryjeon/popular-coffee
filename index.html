@@ -4,6 +4,7 @@
   <title>Philadelphia Coffee Shops</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Refresh" content="3600">
   <meta name="viewport" content="height=device-height, width=device-width,
     initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
     user-scalable=no" >
@@ -20,12 +21,24 @@
 
 <body>
   <nav class="navbar-fixed-top">
+    <div id="intro">
+      <img id="icon" src="favicon.png"></img>
+      A map visualizing how busy Philadelphia's coffee shops are by the hour.
+      Based on Google's Popular Times feature.
+      Created by <a target="_blank" href="http://estheryjeon.com/">Esther Jeon</a>.
+    </div>
     <div id="info-box">
       <span id="close">&times;</span>
       <div id="info">
       </div>
     </div>
   </nav>
+
+  <div class="footer">
+    <div class="slider">
+      <span id="time"></span>
+    </div>
+  </div>
 
   <div>
     <?xml version="1.0" encoding="utf-8"?>

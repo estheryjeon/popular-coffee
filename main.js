@@ -7,6 +7,17 @@ $(document).ready(function() {
   var day = today.getDay();
   var hour = today.getHours();
 
+  function time() {
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes();
+    var h = d.getHours();
+    var currentTime = h + ":" + m + ":" + s;
+    $('#time').empty().append(currentTime);
+  };
+
+  setInterval(time, 1000);
+
   for (i=0; i<local_data.length; i++) {
     var newOpacity = '0.' + local_data[i].populartimes[day].data[hour];
     $("#" + local_data[i].tag).css('opacity', newOpacity);

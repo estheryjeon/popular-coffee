@@ -1,10 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
 
 html, body {
 	font-family: 'Space Mono';
+}
+
+#icon {
+	width: 2%;
+}
+
+#intro {
+	font-size: 0.85em;
+	position: fixed;
+	padding: 2%;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover {
+	color: #F05656;
 }
 
 #info-box {
@@ -17,9 +38,30 @@ html, body {
 	text-align: center;
 	background-color: white;
 	z-index: 1;
+	font-size: 0.85em;
 }
 
-@media only screen and (max-width: 720px) {
+#time {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.footer {
+	width: 100%;
+	bottom: 0;
+	font-size: 0.85em;
+	position: fixed;
+	margin-bottom: 2.5%;
+}
+.slider {
+	width: 50%;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	padding: 2%;
+}
+
+@media only screen and (max-width: 650px) {
     #info-box {
 			position: fixed ;
 			margin-left: 20%;
@@ -38,7 +80,6 @@ svg {
 	fill: #F05656;
 	opacity: 0;
 }
-
 
 #water {
 	fill: #E8F0F9;

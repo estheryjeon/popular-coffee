@@ -67,7 +67,8 @@ var data = [
     "address": "207 S Sydenham St, Philadelphia, PA 19102, USA",
     "types": ["cafe", "store", "point_of_interest", "food", "establishment"],
     "coordinates": {"lat": 39.94933359999999, "lng": -75.1666936},
-    "rating": 4.7, "rating_n": 787,
+    "rating": 4.7,
+    "rating_n": 787,
     "international_phone_number": "+1 239-404-1730",
     "populartimes": [
       {
