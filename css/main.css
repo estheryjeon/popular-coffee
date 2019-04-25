@@ -41,9 +41,8 @@ a:hover {
 	font-size: 0.85em;
 }
 
-#time {
+.slider {
 	font-weight: 700;
-	font-style: italic;
 }
 
 .footer {
@@ -54,7 +53,7 @@ a:hover {
 	margin-bottom: 2.5%;
 }
 .slider {
-	width: 50%;
+	width: 30%;
 	margin: 0 auto;
 	background-color: white;
 	text-align: center;
