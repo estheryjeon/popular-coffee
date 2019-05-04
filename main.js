@@ -4,24 +4,45 @@ $(document).ready(function() {
   var close = document.getElementById("close");
 
   var today = new Date();
-  var day = today.getDay();
-  var hour = today.getHours();
+  var future = new Date();
+  future.setTime(future.getTime() + 3600000);
+  future.setMinutes(0);
+  future.setSeconds(0);
 
-  function time() {
-    var d = new Date();
-    var s = d.getSeconds();
-    var m = d.getMinutes();
-    var h = d.getHours();
+  var timeout = (future.getTime() - today.getTime());
+  setTimeout(function() { window.location.reload(true); }, timeout);
+
+  // timezone update
+
+  function calcTime() {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*(-5)));
+    var s = nd.getSeconds();
+    var m = nd.getMinutes();
+    var h = nd.getHours();
     var currentTime = h + ":" + m + ":" + s;
     $('#time').empty().append(currentTime);
-  };
-
-  setInterval(time, 1000);
-
-  for (i=0; i<local_data.length; i++) {
-    var newOpacity = '0.' + local_data[i].populartimes[day].data[hour];
-    $("#" + local_data[i].tag).css('opacity', newOpacity);
+    return nd;
   }
+
+  setInterval(calcTime, 1000);
+
+  // opacity update
+
+  function opacity() {
+    var time = calcTime();
+    var hour = time.getHours();
+    var day = time.getDay();
+    for (i=0; i<local_data.length; i++) {
+      var newOpacity = '0.' + local_data[i].populartimes[day].data[hour];
+      $("#" + local_data[i].tag).css('opacity', newOpacity);
+    }
+  }
+
+  opacity();
+
+  // pop up information
 
   $('.popular').click(function(e) {
     var id = $(e.target).prop('id');
