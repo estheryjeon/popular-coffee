@@ -17,7 +17,7 @@ $(document).ready(function() {
   function calcTime() {
     d = new Date();
     utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-    nd = new Date(utc + (3600000*(-5)));
+    nd = new Date(utc + (3600000*(-4)));
     var s = nd.getSeconds();
     var m = nd.getMinutes();
     var h = nd.getHours();
